@@ -1,7 +1,7 @@
 # study-android-bookmanagement
 #### Learning to code a book management app 
 
-## Themen die hier behandelt werden
+## Topics covered here
 
 - tbd
 - tbd
