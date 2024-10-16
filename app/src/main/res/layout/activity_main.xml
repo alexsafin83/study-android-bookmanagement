@@ -11,17 +11,25 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="47dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_launcher_round"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My Librtary"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="207dp" />
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="My Library"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/txtLicense"
@@ -29,60 +37,75 @@
         android:layout_height="wrap_content"
         android:text="Developed by John Doe"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="691dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnAbout"
+        app:layout_constraintStart_toStartOf="@+id/btnAbout"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbout"
+        app:layout_constraintVertical_bias="0.841" />
 
     <Button
         android:id="@+id/btnAllBooks"
-        android:layout_width="wrap_content"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="See all books"
         android:textAllCaps="false"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="262dp" />
+        app:layout_constraintEnd_toEndOf="@+id/txtName"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
 
     <Button
         android:id="@+id/btnCurrentlyReading"
-        android:layout_width="wrap_content"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Currently Reading books"
         android:textAllCaps="false"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="335dp" />
+        app:layout_constraintEnd_toEndOf="@+id/btnAllBooks"
+        app:layout_constraintStart_toStartOf="@+id/btnAllBooks"
+        app:layout_constraintTop_toBottomOf="@+id/btnAllBooks" />
 
     <Button
         android:id="@+id/btnAlreadyRead"
-        android:layout_width="wrap_content"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Already read books"
         android:textAllCaps="false"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="399dp" />
+        app:layout_constraintEnd_toEndOf="@+id/btnCurrentlyReading"
+        app:layout_constraintStart_toStartOf="@+id/btnCurrentlyReading"
+        app:layout_constraintTop_toBottomOf="@+id/btnCurrentlyReading" />
 
     <Button
         android:id="@+id/btnWantToRead"
-        android:layout_width="wrap_content"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Your wishlist"
         android:textAllCaps="false"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="463dp" />
+        app:layout_constraintEnd_toEndOf="@+id/btnAlreadyRead"
+        app:layout_constraintStart_toStartOf="@+id/btnAlreadyRead"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlreadyRead" />
 
     <Button
         android:id="@+id/btnFavouriteBooks"
-        android:layout_width="wrap_content"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="See your favourites"
         android:textAllCaps="false"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="525dp" />
+        app:layout_constraintEnd_toEndOf="@+id/btnWantToRead"
+        app:layout_constraintStart_toStartOf="@+id/btnWantToRead"
+        app:layout_constraintTop_toBottomOf="@+id/btnWantToRead" />
 
     <Button
         android:id="@+id/btnAbout"
-        android:layout_width="wrap_content"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="About"
         android:textAllCaps="false"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="600dp" />
+        app:layout_constraintEnd_toEndOf="@+id/btnFavouriteBooks"
+        app:layout_constraintStart_toStartOf="@+id/btnFavouriteBooks"
+        app:layout_constraintTop_toBottomOf="@+id/btnFavouriteBooks" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,6 @@
 
 ## Topics covered here
 
-- tbd
-- tbd
+- constraint layout
+- textAllCaps setting of view elements
 - ...
