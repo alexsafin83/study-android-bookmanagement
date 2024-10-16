@@ -5,5 +5,5 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.BookManager" parent="Base.Theme.BookManager" />
+    <style name="Theme.BookManager" parent="Theme.MaterialComponents.Light" />
 </resources>
