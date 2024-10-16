@@ -7,13 +7,82 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="47dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Librtary"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <TextView
+        android:id="@+id/txtLicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by John Doe"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="691dp" />
+
+    <Button
+        android:id="@+id/btnAllBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See all books"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <Button
+        android:id="@+id/btnCurrentlyReading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currently Reading books"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="335dp" />
+
+    <Button
+        android:id="@+id/btnAlreadyRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already read books"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <Button
+        android:id="@+id/btnWantToRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your wishlist"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="463dp" />
+
+    <Button
+        android:id="@+id/btnFavouriteBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See your favourites"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="525dp" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="600dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
