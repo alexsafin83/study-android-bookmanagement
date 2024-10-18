@@ -35,7 +35,7 @@
         android:id="@+id/txtLicense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Developed by John Doe"
+        android:text="@string/developed_by_author"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btnAbout"
