@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.bookmanager.adapter.BookRecyclerViewAdapter;
@@ -35,7 +35,7 @@ public class AllBooksActivity extends AppCompatActivity {
         booksRecyclerView = findViewById(R.id.booksRecView);
 
         booksRecyclerView.setAdapter(adapter);
-        booksRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        booksRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         ArrayList<Book> books = new ArrayList<>();
         books.add(new Book(1,
@@ -43,8 +43,16 @@ public class AllBooksActivity extends AppCompatActivity {
                            "Robert Arthur",
                            128,
                            "https://images.sk-static.com/images/media/img/col6/20211217-105314-139957.png",
-                           "Short description",
-                           "A really long description of ???"
+                           "Die drei Detektive ist eine Jugendbuch-Reihe.",
+                           "Sie stammt aus den Vereinigten Staaten und wurde in viele Sprachen übersetzt. In Deutschland startete die Buchreihe 1968 mit den Übersetzungen der englischsprachigen Originale und wird seit 1993, nachdem die Reihe in den Vereinigten Staaten eingestellt worden war, mit Geschichten deutschsprachiger Autoren fortgesetzt."
+        ));
+        books.add(new Book(1,
+                           "Alex Rider Scorpia",
+                           "Anthony Horowitz",
+                           352,
+                           "https://bilder.buecher.de/produkte/23/23800/23800159n.jpg",
+                           "Alex Rider - Scorpia ist Alex Riders fünfter Fall.",
+                           "Für MI6-Agent Alex Rider bricht eine Welt zusammen, als er erfährt, dass sein Vater ein hochbezahlter Killer gewesen sein soll, der vom MI6 ermordet wurde."
         ));
         adapter.setBooks(books);
     }

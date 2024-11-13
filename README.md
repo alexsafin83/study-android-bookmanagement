@@ -15,3 +15,5 @@
 - RecyclerView
 - inner class
 - directive uses-permission (INTERNET)
+- collapsing/expanding of layout components within a MaterialCardView
+- usage of TransitionManager (more fancy delayed transition)
